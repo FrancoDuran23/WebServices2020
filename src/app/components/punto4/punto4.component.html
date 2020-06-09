@@ -1,0 +1,92 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-sm-12" *ngIf="filtro == false">
+            <table class="table table-dark" [mfData]="a" #mf="mfDataTable" [mfRowsOnPage]="5">
+                <thead>
+                    <tr>
+                        <th scope="col">Ubicacion</th>
+                        <th scope="col">Casos Confirmados</th>
+                        <th scope="col">Curados</th>
+                        <th scope="col">Fallecidos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of a">
+                        <td> {{item.Country_text}}</td>
+                        <td>{{item["Active Cases_text"]}}</td>
+                        <td>{{item["Total Recovered_text"]}}</td>
+                        <td>{{item["Total Deaths_text"]}}</td>
+
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <mfBootstrapPaginator></mfBootstrapPaginator>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="col-md-8 col-sm-12" *ngIf="filtro">
+            <table class="table table-dark" [mfData]="a" #mf="mfDataTable" [mfRowsOnPage]="5">
+                <thead>
+                    <tr>
+                        <th scope="col">Ubicacion</th>
+                        <th scope="col" *ngIf="filtroCaso">Casos Confirmados</th>
+                        <th scope="col" *ngIf="filtroRecuperado">Curados</th>
+                        <th scope="col" *ngIf="filtroMuerte">Fallecidos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> {{b.Country_text}}</td>
+                        <td *ngIf="filtroCaso">{{b["Active Cases_text"]}}</td>
+                        <td *ngIf="filtroRecuperado">{{b["Total Recovered_text"]}}</td>
+                        <td *ngIf="filtroMuerte">{{b["Total Deaths_text"]}}</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-dark">
+                <div class=" col-md-12 p-2 mb-2 bg-info text-white unoo">
+                    Filtrar Estadisticas
+                </div>
+                <form class="col-md-12" style="color:white;">
+                    <div class="form-group">
+                        <label for="Pais">Pais</label>
+                        <select id="pais" class="form-control" name="pais" id="pais" [(ngModel)]="pais">
+                            <option value="usa">Estados Unidos</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="brasil">Brasil</option>
+                        </select>
+
+                    </div>
+
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="casosConf" (change)="changeCas()">
+                        <label class="form-check-label" for="casosConf">Casos confirmados</label>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="curado" (change)="changeRec()">
+                        <label class="form-check-label" for="curado">Curados</label>
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="fallecido" (change)="changeMue()">
+                        <label class="form-check-label" for="fallecido">Fallecidos</label>
+                    </div>
+                    <button type="submit" class="text-black col-sm-12 btn btn-warning btn-sm "
+                        style="margin-bottom: 15px;" (click)="devolverCov()">Consultar</button>
+                    <button type="submit" class="text-black col-sm-12 btn btn-warning btn-sm"
+                        style="margin-bottom: 15px;" (click)="ngOnInit()">Consultar</button>
+
+                </form>
+            </div>
+        </div>
+
+    </div>

@@ -1,0 +1,427 @@
+<div class="container">
+    <br>
+    <h2 class="tress" style="color:rgb(37, 137, 250)"><b>Horoscopo</b></h2>
+    <div class="row col-md-12">
+        <div class="col-md-4 col-sm-6 ">
+            <div class="row">
+                <img src="/assets/img/ari.png" class="mr-1 imagg">
+                <div>
+                    <h5>
+                        <div class="bg-primary " style=" border-radius:10px; color:white;padding-left:2em;">
+                            Aries
+                        </div>
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 ">
+            <div class="row">
+                <img src="/assets/img/tauro.png" class="mr-1 imagg">
+                <div>
+                    <h5>
+                        <div class="bg-primary " style=" border-radius:10px; color:white;padding-left:2em;">
+                            Tauro
+                        </div>
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 ">
+            <div class="row">
+                <img src="/assets/img/geminis.png" class="mr-1 imagg">
+                <div>
+                    <h5>
+                        <div class="bg-primary " style=" border-radius:10px; color:white;padding-left:2em;">
+                            Geminis
+                        </div>
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6  ">
+            <div class="row">
+                <img src="/assets/img/cancer.png" class="mr-1 imagg">
+                <div>
+                    <h5>
+                        <div class="bg-primary " style=" border-radius:10px; color:white;padding-left:2em;">
+                            Cancer
+                        </div>
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 ">
+            <div class="row">
+                <img src="/assets/img/leo.png" class="mr-1 imagg">
+                <div>
+                    <h5>
+                        <div class="bg-primary " style=" border-radius:10px; color:white;padding-left:2em;">
+                            Leo
+                        </div>
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6  ">
+            <div class="row">
+                <img src="/assets/img/virgo.png" class="mr-1 imagg">
+                <div>
+                    <h5>
+                        <div class="bg-primary " style=" border-radius:10px; color:white;padding-left:2em;">
+                            Virgo
+                        </div>
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6  ">
+            <div class="row">
+                <img src="/assets/img/libra.png" class="mr-1 imagg">
+                <div>
+                    <h5>
+                        <div class="bg-primary " style=" border-radius:10px; color:white;padding-left:2em;">
+                            Libra
+                        </div>
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6  ">
+            <div class="row">
+                <img src="/assets/img/scorpo.png" class="mr-1 imagg">
+                <div>
+                    <h5>
+                        <div class="bg-primary " style=" border-radius:10px; color:white;padding-left:2em;">
+                            Escorpion
+                        </div>
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6  ">
+            <div class="row">
+                <img src="/assets/img/sag.png" class="mr-1 imagg">
+                <div>
+                    <h5>
+                        <div class="bg-primary " style=" border-radius:10px; color:white;padding-left:2em;">
+                            Sagitario
+                        </div>
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6  ">
+            <div class="row">
+                <img src="/assets/img/cap.jpg" class="mr-1 imagg">
+                <div>
+                    <h5>
+                        <div class="bg-primary " style=" border-radius:10px; color:white;padding-left:2em;">
+                            Capricornio
+                        </div>
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6  ">
+            <div class="row">
+                <img src="/assets/img/acua.png" class="mr-1  imagg">
+                <div>
+                    <h5>
+                        <div class="bg-primary " style=" border-radius:10px; color:white;padding-left:2em;">
+                            Acuario
+                        </div>
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 ">
+
+            <div class="row">
+                <img src="/assets/img/picis.png" class="mr-1 imagg">
+
+                <h5>
+                    <div class="bg-primary " style=" border-radius:10px; color:white;padding-left:2em;">
+                        Picis
+                    </div>
+                </h5>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header bg-primary" style="color:white">
+                <h2>{{a.horoscopo.aries.nombre}}<h6>({{a.horoscopo.aries.fechaSigno}})</h6>
+                </h2>
+                <h4>{{a.titulo}}</h4>
+
+
+            </div>
+            <div class="card-body">
+
+                <img class="imagg" src="/assets/img/ari.png" style="float: left;">
+                <h6>Amor</h6>{{a.horoscopo.aries.amor}} <br>
+
+                <h6>Dinero</h6>
+                {{a.horoscopo.aries.dinero}}
+                <br>
+                <h6>Salud</h6>
+                {{a.horoscopo.aries.salud}}
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-primary" style="color:white">
+                <h2>{{a.horoscopo.cancer.nombre}}<h6>({{a.horoscopo.cancer.fechaSigno}})</h6>
+                </h2>
+                <h4>{{a.titulo}}</h4>
+            </div>
+            <div class="card-body">
+
+                <img class="imagg" src="/assets/img/cancer.png" style="float: left;">
+                <h6>Amor</h6>{{a.horoscopo.cancer.amor}}
+                <br>
+
+                <h6>Dinero</h6>
+                {{a.horoscopo.cancer.dinero}}
+                <br>
+                <h6>Salud</h6>
+                {{a.horoscopo.cancer.salud}}
+
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-primary" style="color:white">
+                <h2>{{a.horoscopo.libra.nombre}}<h6>({{a.horoscopo.libra.fechaSigno}})</h6>
+                </h2>
+                <h4>{{a.titulo}}</h4>
+            </div>
+            <div class="card-body">
+
+                <img class="imagg" src="/assets/img/libra.png" style="float: left;">
+                <h6>Amor</h6>{{a.horoscopo.libra.amor}}
+
+
+                <br>
+                <h6>Dinero</h6>
+                {{a.horoscopo.libra.dinero}}
+                <br>
+                <h6>Salud</h6>
+                {{a.horoscopo.libra.salud}}
+
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-primary" style="color:white">
+                <h2>{{a.horoscopo.tauro.nombre}}<h6>({{a.horoscopo.tauro.fechaSigno}})</h6>
+                </h2>
+                <h4>{{a.titulo}}</h4>
+            </div>
+            <div class="card-body">
+
+                <img class="imagg" src="/assets/img/tauro.png" style="float: left;">
+                <h6>Amor</h6>{{a.horoscopo.tauro.amor}}
+
+
+                <br>
+                <h6>Dinero</h6>
+                {{a.horoscopo.tauro.dinero}}
+                <br>
+                <h6>Salud</h6>
+                {{a.horoscopo.tauro.salud}}
+
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-primary" style="color:white">
+                <h2>{{a.horoscopo.capricornio.nombre}}<h6>({{a.horoscopo.capricornio.fechaSigno}})</h6>
+                </h2>
+                <h4>{{a.titulo}}</h4>
+            </div>
+            <div class="card-body">
+
+                <img class="imagg" src="/assets/img/cap.jpg" style="float: left;">
+                <h6>Amor</h6>{{a.horoscopo.capricornio.amor}}
+
+                <br>
+                <h6>Dinero</h6>
+                {{a.horoscopo.capricornio.dinero}}
+                <br>
+                <h6>Salud</h6>
+                {{a.horoscopo.capricornio.salud}}
+
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-primary" style="color:white">
+                <h2>{{a.horoscopo.leo.nombre}}<h6>({{a.horoscopo.leo.fechaSigno}})</h6>
+                </h2>
+                <h4>{{a.titulo}}</h4>
+            </div>
+            <div class="card-body">
+
+                <img class="imagg" src="/assets/img/leo.png" style="float: left;">
+                <h6>Amor</h6>{{a.horoscopo.leo.amor}}
+
+                <br>
+                <h6>Dinero</h6>
+                {{a.horoscopo.leo.dinero}}
+                <br>
+                <h6>Salud</h6>
+                {{a.horoscopo.leo.salud}}
+
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-primary" style="color:white">
+                <h2>{{a.horoscopo.escorpion.nombre}}<h6>({{a.horoscopo.escorpion.fechaSigno}})</h6>
+                </h2>
+                <h4>{{a.titulo}}</h4>
+            </div>
+            <div class="card-body">
+
+                <img class="imagg" src="/assets/img/scorpo.png" style="float: left;">
+                <h6>Amor</h6>{{a.horoscopo.escorpion.amor}}
+
+                <br>
+                <h6>Dinero</h6>
+                {{a.horoscopo.escorpion.dinero}}
+                <br>
+                <h6>Salud</h6>
+                {{a.horoscopo.escorpion.salud}}
+
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-primary" style="color:white">
+                <h2>{{a.horoscopo.acuario.nombre}}<h6>({{a.horoscopo.acuario.fechaSigno}})</h6>
+                </h2>
+                <h4>{{a.titulo}}</h4>
+            </div>
+            <div class="card-body">
+
+                <img class="imagg" src="/assets/img/acua.png" style="float: left;">
+                <h6>Amor</h6>{{a.horoscopo.acuario.amor}}
+
+                <br>
+                <h6>Dinero</h6>
+
+                {{a.horoscopo.acuario.dinero}}
+                <br>
+                <h6>Salud</h6>
+                {{a.horoscopo.acuario.salud}}
+
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-primary" style="color:white">
+                <h2>{{a.horoscopo.geminis.nombre}}<h6>({{a.horoscopo.geminis.fechaSigno}})</h6>
+                </h2>
+                <h4>{{a.titulo}}</h4>
+            </div>
+            <div class="card-body">
+
+                <img class="imagg" src="/assets/img/geminis.png" style="float: left;">
+                <h6>Amor</h6>{{a.horoscopo.geminis.amor}}
+
+                <br>
+                <h6>Dinero</h6>
+                {{a.horoscopo.geminis.dinero}}
+                <br>
+                <h6>Salud</h6>
+                {{a.horoscopo.geminis.salud}}
+
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-primary" style="color:white">
+                <h2>{{a.horoscopo.virgo.nombre}}<h6>({{a.horoscopo.virgo.fechaSigno}})</h6>
+                </h2>
+                <h4>{{a.titulo}}</h4>
+            </div>
+            <div class="card-body">
+
+                <img class="imagg" src="/assets/img/virgo.png" style="float: left;">
+                <h6>Amor</h6>{{a.horoscopo.virgo.amor}}
+
+                <br>
+                <h6>Dinero</h6>
+                {{a.horoscopo.virgo.dinero}}
+                <br>
+                <h6>Salud</h6>
+                {{a.horoscopo.virgo.salud}}
+
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-primary" style="color:white">
+                <h2>{{a.horoscopo.sagitario.nombre}}<h6>({{a.horoscopo.sagitario.fechaSigno}})</h6>
+                </h2>
+                <h4>{{a.titulo}}</h4>
+            </div>
+            <div class="card-body">
+
+                <img class="imagg" src="/assets/img/sag.png" style="float: left;">
+                <h6>Amor</h6>{{a.horoscopo.sagitario.amor}}
+
+                <br>
+                <h6>Dinero</h6>
+                {{a.horoscopo.sagitario.dinero}}
+
+                <br>
+                <h6>Salud</h6>
+                {{a.horoscopo.sagitario.salud}}
+
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header bg-primary" style="color:white">
+                <h2>{{a.horoscopo.piscis.nombre}}<h6>({{a.horoscopo.piscis.fechaSigno}})</h6>
+                </h2>
+                <h4>{{a.titulo}}</h4>
+            </div>
+            <div class="card-body">
+
+                <img class="imagg" src="/assets/img/picis.png" style="float: left;">
+
+                <h6>Amor</h6>{{a.horoscopo.piscis.amor}}
+                <br>
+
+                <h6>Dinero</h6>
+                {{a.horoscopo.piscis.amor}}
+                <br>
+                <h6>Salud</h6>
+                {{a.horoscopo.piscis.amor}}
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+    </div>
+</div>

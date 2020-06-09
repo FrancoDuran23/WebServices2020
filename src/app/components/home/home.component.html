@@ -1,0 +1,44 @@
+<br>
+<div class="container">
+    <div class="row">
+
+
+        <select style="width: 70%;" id="categoria" class="custom-select form-control" name="categoria"
+            [(ngModel)]="categoria">
+            <option value="soccer">Soccer</option>
+            <option value="basketball">Basketball</option>
+            <option value="tennis">Tennis</option>
+        </select>
+        <button class="btn btn-warning btn-sm " style="margin-left: 40px;" type="submit"
+            (click)="cargarNoticias()">Buscar</button>
+    </div>
+    <br>
+    <br>
+
+    <div class="row">
+
+        <div class="col-md-9 row" *ngFor="let item of vector_noticia">
+            <div class="row col-md-12">
+                <div class="card col-md-12" style="width: 18rem;">
+                    <img src="{{item.img}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6><span class="badge badge-danger">{{item.tit}}</span></h6>
+                        <b class="card-title">{{item.des}}</b>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <aside class="col-md-3">
+            <img src="/assets/img/aside1.jpg" class="card-img-top img-asid" alt="...">
+        </aside>
+
+
+
+
+    </div>

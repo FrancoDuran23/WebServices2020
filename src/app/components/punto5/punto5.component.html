@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="card text-white bg-primary mb-3 col-md-12">
+        <div class="card-body">
+            <div class="row">
+
+                <select id="city" class="custom-select form-control" name="city" [(ngModel)]="city">
+                    <option value="London">Londres</option>
+                    <option value="Caracas">Caracas</option>
+                    <option value="Madrid">Madrid</option>
+                </select>
+                <button type="submit" class="text-black col-sm-12 btn btn-warning btn-sm " style="margin-bottom: 15px;"
+                    (click)="devolverClima()">Consultar</button>
+
+            </div>
+            <h5 class="card-title">{{a.name}}</h5>
+
+            <h6 class="card-subtitle mb-2 ">Temperatura</h6>
+            <h2>{{a.main.temp}}°C</h2>
+            <p class="card-text">Descripcion del Clima : {{a.weather[0].description}}</p>
+
+        </div>
+    </div>
+</div>
